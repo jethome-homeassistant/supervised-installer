@@ -64,7 +64,7 @@ jobs:
         with:
           SSH_KEY: ${{ secrets.SSH_KEY }}
           SSH_KNOWNHOSTS_UPLOAD: ${{ secrets.SSH_KNOWNHOSTS_UPLOAD }}
-          distro: bookworm
+          distro: trixie
           path: .
           files: ${{ steps.getfile.outputs.filename }}
           branch: stable
@@ -75,7 +75,7 @@ jobs:
         with:
           SSH_KEY: ${{ secrets.SSH_KEY }}
           SSH_KNOWNHOSTS_UPLOAD: ${{ secrets.SSH_KNOWNHOSTS_UPLOAD }}
-          distro: bookworm
+          distro: trixie
           path: .
           files: ${{ steps.getfile.outputs.filename }}
           branch: nightly
